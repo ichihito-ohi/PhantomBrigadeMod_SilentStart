@@ -1,0 +1,12 @@
+.vs/
+obj/
+bin/
+.idea/
+
+*.DotSettings.user
+
+*Mod.zip
+Configs/
+ConfigOverrides/
+Libraries/
+LocalizationEdits/
