@@ -29,8 +29,6 @@ namespace EchKode.PBMods.SilentStart
 			var loadSetting = CodeInstruction.LoadField(typeof(GameSettings), nameof(GameSettings.enableExecuteSound));
 			var storeSetting = CodeInstruction.StoreField(typeof(Patch), nameof(Patch.playSoundInDialog));
 
-			FileLog.Log("open: " + openMatch);
-			FileLog.Log("load: " + loadInstanceMatch);
 			var cm = new CodeMatcher(instructions, generator);
 			cm.End();
 			cm.MatchStartBackwards(openMatch)
